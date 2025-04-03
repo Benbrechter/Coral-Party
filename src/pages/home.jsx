@@ -1,5 +1,15 @@
+import Navbar from "./componets/nav-bar"
+
 export default function Home(){ 
     return(
-        <h1>Hellow World</h1>
+        <main>
+            <Navbar/>
+            
+            <div>
+             <img  className= "img-container" src="" alt="Flyer" />  
+             <button>Rsvp</button>
+            </div>
+        </main>
+        
     )
 }
