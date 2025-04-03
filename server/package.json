@@ -1,0 +1,19 @@
+{
+    "name": "party-rsvp-server",
+    "version": "1.0.0",
+    "description": "Backend for party RSVP with Stripe",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "watch": "nodemon",
+        "seed": "node config/seeds.js"
+    },
+    "dependencies": {
+        "body-parser": "^2.2.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^5.1.0",
+        "nodemon": "^3.1.9",
+        "stripe": "^18.0.0"
+    }
+}
