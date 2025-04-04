@@ -7,7 +7,7 @@ export default function Home(){
         <main>
             <Navbar/>
             
-            <div>
+            <div className="home-pg">
              <img  className= "img-container" src={flyer} alt="Flyer" />  
              <Link to = '/rsvp'> <button>Rsvp</button> </Link>
              
