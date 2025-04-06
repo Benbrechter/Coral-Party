@@ -1,5 +1,5 @@
 
-function Navbar() {
+function Logo() {
     return(
         <div>
             <h1>Hello World</h1>
@@ -7,4 +7,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Logo
