@@ -1,6 +1,5 @@
-import Logo from "./componets/logo"
 import arrow from "./pictures/down-arrow.png"
-import flyer from "./pictures/flyer.png"
+
 
 import { Link } from 'react-router-dom'
 
