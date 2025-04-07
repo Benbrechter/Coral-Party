@@ -1,9 +1,12 @@
-const express = require('express');
-const cors = require('cors');
-const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-require('dotenv').config();
-//adding this rn
+import express from 'express';
+import cors from 'cors';
+import nodemailer from 'nodemailer';
+import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
+
+// Initialize dotenv
+dotenv.config();
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -22,13 +25,13 @@ const transporter = nodemailer.createTransport({
 
 // RSVP endpoint
 app.post('/api/rsvp', async (req, res) => {
-  const { name, email, payment, note  } = req.body;
+  const { name, email, payment, note } = req.body;
   
   try {
     // Email to yourself (notification)
     await transporter.sendMail({
-      from: user,
-      to: user,
+      from: process.env.EMAIL_USER, // Fixed: should use environment variable
+      to: process.env.EMAIL_USER,   // Fixed: should use environment variable
       subject: `New RSVP from ${name}`,
       html: `
         <h3>New RSVP Submission</h3>
@@ -41,7 +44,7 @@ app.post('/api/rsvp', async (req, res) => {
     
     // Confirmation email to the guest
     await transporter.sendMail({
-      from: user,
+      from: process.env.EMAIL_USER, // Fixed: should use environment variable
       to: email,
       subject: 'Thank you for your RSVP',
       html: `
@@ -49,7 +52,7 @@ app.post('/api/rsvp', async (req, res) => {
         <p>Dear ${name},</p>
         <p>We have received your RSVP and look forward to seeing you at our event.</p>
         <p>Here are the details you provided:</p>
-        <p><strong>Number of Guests:</strong> ${guests}</p>
+        <p><strong>Payment Method:</strong> ${payment}</p>
         <p>If you need to make any changes, please contact us directly.</p>
         <p>Best regards,</p>
         <p>Your Name</p>
