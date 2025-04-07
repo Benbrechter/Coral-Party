@@ -1,16 +1,38 @@
 import Logo from "./componets/logo"
 import { useState } from 'react';
+const API_URL = process.env.REACT_APP_API_URL || 'https://your-deployed-api.com';
 
 export default function Rsvp() {
   const [showPopup, setShowPopup] = useState(false);
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    console.log("Form submitted");
-    setShowPopup(true);
+  // In your React component that handles the form submission
+const handleSubmit = async (formData) => {
+    try {
+        e.preventDefault();
+      const response = await fetch(`${API_URL}/api/rsvp`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        // Show success message to the user
+         console.log("Form submitted");
+            setShowPopup(true);
+      } else {
+        // Show error message
+        alert('Something went wrong. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error submitting RSVP:', error);
+      alert('Failed to submit RSVP. Please check your connection and try again.');
+    }
   };
-  
+
   const closePopup = () => {
     setShowPopup(false);
   };
@@ -26,7 +48,7 @@ export default function Rsvp() {
         <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-800 mb-1">
-              What is your name?
+              Perferred Name?
             </label>
             <input
               type="text"
@@ -37,17 +59,6 @@ export default function Rsvp() {
             />
           </div>
           
-          <div>
-            <label htmlFor="pronouns" className="block text-sm font-medium text-gray-800 mb-1">
-              Preferred pronouns?
-            </label>
-            <input
-              type="text"
-              id="pronouns"
-              name="pronouns"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md text-gray-800 text-base"
-            />
-          </div>
           
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-800 mb-1">
