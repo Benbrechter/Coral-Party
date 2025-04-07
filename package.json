@@ -8,7 +8,8 @@
   "build": "vite build",
   "lint": "eslint .",
   "preview": "vite preview",
-  "start": "node server.js"
+  "start": "node server.js",
+  "postinstall": "chmod +x ./node_modules/.bin/vite"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
