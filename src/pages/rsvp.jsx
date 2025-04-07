@@ -1,6 +1,6 @@
 import Logo from "./componets/logo"
 import { useState } from 'react';
-const API_URL = process.env.REACT_APP_API_URL || 'https://your-deployed-api.com';
+// const API_URL = process.env.REACT_APP_API_URL || 'https://your-deployed-api.com';
 
 export default function Rsvp() {
   const [showPopup, setShowPopup] = useState(false);
