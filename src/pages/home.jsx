@@ -1,6 +1,5 @@
 import arrow from "./pictures/down-arrow.png"
-
-
+import Rho from "./componets/rho"
 import { Link } from 'react-router-dom'
 
 export default function Home(){ 
@@ -26,12 +25,12 @@ export default function Home(){
 
             <div className="time">
                 <h1>House of Coral</h1>
-                <p>House of Coral occupies creatives with multi-media outlets. <strong>May 3rd at 6pm</strong> doors will open for Coral's art exhibit! The main artist, <strong>Rho Dove</strong>, will have virtual prints as well as canvas pieces out on display and for sale. The $15 cover charge will give you access to free drinks and free food provided by House of Coral. <strong>Baal Pit</strong> will be performing live along with 2 local artists as openers.</p>
+                <p>House of Coral occupies creatives with multi-media outlets. <strong>May 3rd at 6pm</strong> doors will open for Coral's art exhibit! The main artist, <strong>Rho Dove</strong>, will have virtual prints as well as canvas pieces out on display and for sale. <strong>The $15 cover charge</strong> will give you access to free drinks and free food provided by House of Coral. <strong>Baal Pit</strong> will be performing live along with 2 local artists as openers.</p>
             </div>
 
-            {/* <div className="Rho">
-            
-            </div> */}
+            <div>
+            <Rho/>
+            </div>
             
         </main>
         
