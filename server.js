@@ -28,10 +28,10 @@ app.post('/api/rsvp', async (req, res) => {
   const { name, email, payment, note } = req.body;
   
   try {
-    // Email to yourself (notification)
+    // Email to me
     await transporter.sendMail({
-      from: process.env.EMAIL_USER, // Fixed: should use environment variable
-      to: process.env.EMAIL_USER,   // Fixed: should use environment variable
+      from: process.env.EMAIL_USER, 
+      to: process.env.EMAIL_USER,   
       subject: `New RSVP from ${name}`,
       html: `
         <h3>New RSVP Submission</h3>
@@ -42,9 +42,9 @@ app.post('/api/rsvp', async (req, res) => {
       `
     });
     
-    // Confirmation email to the guest
+    // Confirmation email to the people
     await transporter.sendMail({
-      from: process.env.EMAIL_USER, // Fixed: should use environment variable
+      from: process.env.EMAIL_USER, 
       to: email,
       subject: 'Thank you for your RSVP',
       html: `

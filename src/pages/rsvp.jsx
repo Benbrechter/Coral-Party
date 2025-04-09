@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// const API_URL = process.env.REACT_APP_API_URL || 'https://your-deployed-api.com';
+const API_URL =  'https://coral-party.onrender.com';
 
 export default function Rsvp() {
   const [showPopup, setShowPopup] = useState(false);
@@ -7,7 +7,6 @@ export default function Rsvp() {
   const handleSubmit = async (e) => {
     try {
         e.preventDefault();
-        // Note: I fixed this to use e (event) instead of formData which wasn't defined
         const formData = new FormData(e.target);
         const formDataObject = Object.fromEntries(formData.entries());
         
