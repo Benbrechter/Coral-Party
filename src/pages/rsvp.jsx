@@ -38,7 +38,6 @@ export default function Rsvp() {
 
   return (
     <main className="formbox">
-      {/* <Logo/> */}
       
       <div className="form-container">
         <h1 className="form-title">Event RSVP</h1>
