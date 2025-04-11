@@ -332,7 +332,7 @@ button:focus-visible {
     flex-direction: column;
     position: absolute;
     left: 1px;
-    top: 120%;
+    top: 135%;
   }
   .Rho img{
     height: 200px;
@@ -347,7 +347,7 @@ button:focus-visible {
   width: 400px;
   margin: 0px;
   position: absolute;
-  top: 370%;
+  top: 380%;
   left: 1px;
  }
  .onload{
