@@ -122,10 +122,10 @@ button:focus-visible {
   height: 450px;
   margin-right: 100px;
 }
-.Rho p{
+.Rho-p{
   text-align: center;
   color: Black;
-  width: 900px
+  width: 900px;
 }
 .ball{
   width: 1500px;
@@ -138,7 +138,7 @@ button:focus-visible {
   height: 450px;
   margin-left: 100px;
 }
-.ball p{
+.ball-p{
   text-align: center;
   color: Black;
   width: 900px
@@ -320,7 +320,6 @@ button:focus-visible {
     font-size: 25px;
   }
   .time{
-    display: flex;
     width: 325px;
     position: absolute;
     left:25px;
@@ -338,7 +337,7 @@ button:focus-visible {
     height: 200px;
     margin-bottom: 100px;
   }
-  .Rho p{
+  .Rho-p{
     width: 350px;
     text-align: left;
   }
@@ -350,19 +349,16 @@ button:focus-visible {
   top: 380%;
   left: 1px;
  }
- .onload{
-  display: flex;
-  align-items: start;
- }
  .onload  img{
-  height: 300px;
+  height: 280px;
+  margin-left: -40px;
  }
   .ball img{
     height: 200px;
     margin-bottom: 100px;
     margin-left: 0px;
   }
-  .ball p{
+  .ball-p{
     width: 350px;
     text-align: left;
   }
