@@ -1,6 +1,6 @@
 
 import picRho from "./pictures/aboutRho.PNG"
-import house from "./pictures/house1.png"
+import house from "./pictures/house1.PNG"
 import ball from "./pictures/ball.PNG"
 import { Link } from 'react-router-dom'
 
