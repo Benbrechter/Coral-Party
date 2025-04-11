@@ -69,7 +69,7 @@ button:focus-visible {
   align-items: flex-start;
   position: absolute;
   left:  10px;
-  top: 25%;
+  top: 15%;
 }
 .home-pg h1{
   font-size: 40px;
@@ -93,10 +93,13 @@ button:focus-visible {
 .time{
   margin-top: 200px;
   height: 500px;
-  width: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+
 }
 .house{
-  height: 200px;
+  height: 400px;
 }
 
 .time h1{
@@ -110,19 +113,36 @@ button:focus-visible {
 }
 .Rho{
   width: 1500px;
+  margin-top: 150px;
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
 }
-.Rho h1{
-  color: var(--light-blue);
+.Rho img{
+  height: 450px;
+  margin-right: 100px;
 }
 .Rho p{
-  text-align: left;
+  text-align: center;
   color: Black;
   width: 900px
 }
-
+.ball{
+  width: 1500px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.ball img{
+  height: 450px;
+  margin-left: 100px;
+}
+.ball p{
+  text-align: center;
+  color: Black;
+  width: 900px
+}
 /* ------------------------------- */
 /* General styles */
 /* Form container */
@@ -287,4 +307,70 @@ button:focus-visible {
 
 .popup-button:hover {
   background-color: #059669;
+}
+
+/* media quiries */
+
+@media (max-width: 450px) {
+ 
+  .home-pg{
+    top: 10%;
+  }
+  .home-pg h1{
+    font-size: 25px;
+  }
+  .time{
+    display: flex;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    left:35px;
+    top: 25%;
+  }
+  .Rho{
+    width: 400px;
+    flex-direction: column;
+    position: absolute;
+    left: 1px;
+    top: 100%;
+  }
+  .Rho img{
+    height: 200px;
+    margin-bottom: 100px;
+  }
+  .Rho p{
+    width: 350px;
+    text-align: left;
+  }
+ .ball{
+  flex-direction: column-reverse;
+  width: 400px;
+  margin: 0px;
+  position: absolute;
+  top: 290%;
+  left: 1px;
+ }
+ .onload{
+  display: flex;
+  align-items: start;
+ }
+ .onload  img{
+  height: 300px;
+ }
+  .ball img{
+    height: 200px;
+    margin-bottom: 100px;
+    margin-left: 0px;
+  }
+  .ball p{
+    width: 350px;
+    text-align: left;
+  }
+  .pls-img{
+    width:450px;
+    margin-right: 150px;
+  }
+  .formbox{
+    margin-right: 27px;
+  }
 }

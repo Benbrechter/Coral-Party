@@ -109,7 +109,7 @@ export default function Rsvp() {
         </form>
       </div>
       
-      {/* Confirmation Popup */}
+
       {showPopup && (
         <div className="popup-overlay">
           <div className="popup-container">
@@ -121,10 +121,7 @@ export default function Rsvp() {
               </div>
               <h3 className="popup-title">Thank You!</h3>
               <p className="popup-message">Peace and LOVE!! thank you for the RSVP, you will recive an email to the email you put down! please click the links to venmo or cashapp to send 15$</p>
-              <button
-                onClick={closePopup}
-                className="popup-button"
-              >
+              <button onClick={closePopup} className="popup-button">
                 Close
               </button>
             </div>
