@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fruktur:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Gilda+Display&display=swap');
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,8 +15,8 @@
   --red: #a02900;
   --light-blue: #36a2a3;
   --blue: #058789;
-  --header: "Fascinate Inline";
-  --body: "Fruktur";
+  --header: "Gilda Display";
+  --body: "Figtree";
 }
 
 a {
@@ -317,7 +317,7 @@ button:focus-visible {
     top: 10%;
   }
   .home-pg h1{
-    font-size: 25px;
+    font-size: 50px;
   }
   .time{
     width: 325px;
@@ -328,37 +328,54 @@ button:focus-visible {
 
   .Rho{
     width: 400px;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     left: 1px;
     top: 135%;
   }
-  .Rho img{
-    height: 200px;
-    margin-bottom: 100px;
+  .Rho h2{
+    font-family: var(--header);
+    color: var(--Dorange);
   }
-  .Rho-p{
-    width: 350px;
-    text-align: left;
+  .Rho h1{
+    font-family: var(--header);
+    color: var(--light-blue);
+    font-size: 50px;
+    margin: 0px;
+  }
+  .Rp{
+    display: flex;
+    gap: 2rem;
+  }
+  .rp2{
+    font-family: var(--body);
+    color: black;
   }
  .ball{
+  display: flex;
+  align-items: flex-start;
   flex-direction: column-reverse;
   width: 400px;
   margin: 0px;
   position: absolute;
-  top: 380%;
+  top: 400%;
   left: 1px;
  }
- .onload  img{
-  height: 280px;
-  margin-left: -40px;
+ .ball h1{
+  font-family: var(--header);
+    color: var(--light-blue);
+    font-size: 50px;
+    margin: 0px;
  }
-  .ball img{
-    height: 200px;
-    margin-bottom: 100px;
-    margin-left: 0px;
-  }
+ .onload  img{
+  height: 250px;
+  margin-left: -20px;
+ }
+  
   .ball-p{
+    font-family: var(--body);
     width: 350px;
     text-align: left;
   }
