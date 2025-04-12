@@ -8,7 +8,7 @@
   color: rgba(255, 255, 255, 0.87);
   /* background-color: #242424; */
 
-  --beige: #ded0b1;
+  --beige: #f6efdf;
   --cream: #fbeccd;
   --Dorange: #e55927;
   --orange: #ff7947;
@@ -72,7 +72,7 @@ button:focus-visible {
   top: 15%;
 }
 .home-pg h1{
-  font-size: 40px;
+  font-size: 75px;
   text-align: left;
   margin-bottom: 20px;
   color: var(--light-blue);
@@ -115,33 +115,50 @@ button:focus-visible {
   width: 1500px;
   margin-top: 150px;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  align-items: flex-start;
+  flex-direction: column;
 }
-.Rho img{
-  height: 450px;
-  margin-right: 100px;
+.Rho h2{
+  font-family: var(--header);
+  color: var(--Dorange);
 }
-.Rho-p{
-  text-align: center;
+.Rho h1{
+  font-family: var(--header);
+  color: var(--light-blue);
+  font-size: 65px;
+  margin: 0px;
+}
+.Rp{
+  display: flex;
+    gap: 10rem;
+    width: 1000px;
+}
+.rp2{
   color: Black;
-  width: 900px;
+  width: 1000px;
+  font-size: 18px;
+  font-family: var(--body);
 }
 .ball{
   width: 1500px;
   margin-top: 150px;
   display: flex;
-  align-items: center;
   flex-direction: row;
+  align-items: flex-start;
 }
-.ball img{
-  height: 450px;
-  margin-left: 100px;
+.ball h1{
+  font-family: var(--header);
+  color: var(--blue);
+  font-size: 65px;
+  margin-left: 150px;
+  
 }
 .ball-p{
-  text-align: center;
+  text-align: start;
   color: Black;
-  width: 900px
+  width: 1000px;
+  font-size: 18px;
+  font-family: var(--body);
 }
 /* ------------------------------- */
 /* General styles */
@@ -348,10 +365,12 @@ button:focus-visible {
   .Rp{
     display: flex;
     gap: 2rem;
+    width: 350px;
   }
   .rp2{
     font-family: var(--body);
     color: black;
+    font-size: 15px;
   }
  .ball{
   display: flex;
