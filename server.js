@@ -53,9 +53,8 @@ app.post('/api/rsvp', async (req, res) => {
         ${payment === 'Venmo' ? `
         <p>Please send your $15 payment to: <a href="https://venmo.com/u/Ben-Brechter" target="_blank">https://venmo.com/u/Ben-Brechter</a></p>
         ` : ''}
-        <p>If you need to make any changes, please contact us directly.</p>
-        <p>Best regards,</p>
-        <p>Your Name</p>
+        <p>We also accept payment at the door!.</p>
+        <p>Tell a friend!!<p>
       `
     });
     
