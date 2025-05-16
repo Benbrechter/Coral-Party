@@ -1,4 +1,4 @@
-import house from "../pictures/house1.PNG"
+import house from "../pictures/CoralHouse.png"
 import React, { useState, useEffect } from 'react';
 import 'animate.css';
 
