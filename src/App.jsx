@@ -1,8 +1,11 @@
 import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react'
-import Home from './pages/home'
+import Home2 from './pages/home2'
 import Rsvp from './pages/rsvp'
 import OnLoad from './pages/componets/onLoad';
+import Rho from './pages/componets/rho';
+import Benbeejammin from './pages/componets/Benbeejammin';
+import Music from './pages/componets/Music';
 import './App.css'
 
 const useRouteLoading = () => {
@@ -38,9 +41,12 @@ function App() {
     <Router>
        <RouteLoaderWrapper>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home2 />} />
             <Route path="*" element={<Navigate to="/" />} />
             <Route path='/rsvp' element={<Rsvp/>} />
+            <Route path= '/Rho' element= {<Rho/>} />
+            <Route path= '/Music' element= {<Music/>} />
+            <Route path= '/Benbeejammin' element= {<Benbeejammin/>} />
           </Routes> 
        </RouteLoaderWrapper>
       

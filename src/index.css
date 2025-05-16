@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Gilda+Display&family=Jersey+10&display=swap');
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  padding: 0;
+  margin: 0;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   /* background-color: #242424; */
 
   --beige: #f6efdf;
@@ -15,7 +15,7 @@
   --red: #a02900;
   --light-blue: #36a2a3;
   --blue: #058789;
-  --header: "Gilda Display";
+  --header: "Jersey 10";
   --body: "Figtree";
 }
 
@@ -33,7 +33,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--beige);
+  background-image: url("./pages/pictures/Old.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -160,6 +162,117 @@ button:focus-visible {
   width: 1000px;
   font-size: 18px;
   font-family: var(--body);
+}
+.Home2{
+ display: grid;
+ grid-template-columns: repeat(6, 20%) ;
+ grid-Template-rows: repeat(3, 600px) ;
+ justify-items: start;
+}
+
+.Coral-House-Graphic{
+  width: 500px;
+  height: 600px;
+  grid-column: 2 / 3
+}
+.Coral-House-Graphic img{
+  height: 600px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+.entry-info{
+  margin-left: 150px;
+  margin-bottom: 100px;
+  text-align: start;
+  color: black;
+  grid-column: 4/6
+}
+.entry-info h1{
+  font-family: var(--header);
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+.entry-info p{
+  font-family: var(--body);
+}
+.entry-info li{
+  font-family: var(--body);
+}
+.entry-info img{
+  height: 300px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+
+
+.Rho-art{
+  margin-left: 150px;
+  height: 450px;
+  width: 350px;
+  grid-row: 2/3;
+}
+.Rho-art{
+  color: black;
+}
+.Rho-art p{
+  font-family: var(--header);
+  font-size: 25px;
+}
+.Rho-art img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+.Clothing-rack{
+  height: 300px;
+  width: 450px;
+  grid-row: 2/3;
+  grid-column: 5/6;
+}
+.Clothing-rack p{
+  color: black;
+  font-family: var(--header);
+  font-size: 25px;
+}
+.Clothing-rack img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+
+.Benbeejammin{
+  height: 500px;
+  width: 350px;
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+.Benbeejammin p{
+  color: black;
+  font-family: var(--header);
+  font-size: 25px;
+}
+.Benbeejammin img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+.Music-performers{
+  width: 400px;
+  height: 300px;
+  grid-row: 3/4;
+  grid-column: 6/7;
+}
+.Music-performers p{
+  color: black;
+  font-family: var(--header);
+  font-size: 25px;
+}
+.Music-performers img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
 /* ------------------------------- */
 /* General styles */
@@ -331,78 +444,91 @@ button:focus-visible {
 
 @media (max-width: 450px) {
  
-  .home-pg{
-    top: 10%;
-  }
-  .home-pg h1{
-    font-size: 50px;
-  }
-  .time{
-    width: 325px;
-    position: absolute;
-    left:25px;
-    top: 25%;
-  }
+ .Home2{
+  display: grid;
+  grid-template-columns: repeat(3,125px);
+  grid-template-rows: 400px 400px 200px 200px 400px;   
+ }
+ .Coral-House-Graphic{
+  grid-column: 1/2;
+  width:275px;
+  height: 400px
+ }
+ .Coral-House-Graphic img {
+  width: 275px;
+ height: 400px;
+ }
+ .entry-info{
+  margin: 0;
+  margin-top: 25px;
+  margin-left: 15px;
+  grid-column: 3/4;
+  height: 300px;
+  width: 150px;
+ }
+ .entry-info h1{
+  font-size: 20px;
+  text-align: center;
+ }
+ .entry-info p{
+  text-align: center;
+ }
+ .entry-info img{
+  height: 175px;
+  margin-left: 15px;
+ }
+ .Rho-art{
+  height: 300px;
+  grid-row: 2 / 3;
+  grid-column: 1/2;
+  margin: 0;
+  margin-top: 30px;
+ }
+ .Rho-art p{
+  margin-bottom: 0;
+  font-size: 20px;
+  text-align: center;
 
-  .Rho{
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    left: 1px;
-    top: 135%;
-  }
-  .Rho h2{
-    font-family: var(--header);
-    color: var(--Dorange);
-  }
-  .Rho h1{
-    font-family: var(--header);
-    color: var(--light-blue);
-    font-size: 50px;
-    margin: 0px;
-  }
-  .Rp{
-    display: flex;
-    gap: 2rem;
-    width: 350px;
-  }
-  .rp2{
-    font-family: var(--body);
-    color: black;
-    font-size: 15px;
-  }
- .ball{
+ }
+ .Rho-art img{
+  width: 325px;
+  margin-right: 25px;
+ }
+ .Clothing-rack{
   display: flex;
-  align-items: flex-start;
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
+  align-items: center;
+  grid-row: 3/4;
+  grid-column: 1/2;
   width: 400px;
-  margin: 0px;
-  position: absolute;
-  top: 400%;
-  left: 1px;
+  height: 200px;
  }
- .ball h1{
-  font-family: var(--header);
-    color: var(--light-blue);
-    font-size: 50px;
-    margin: 0px;
+ .Clothing-rack p{
+  margin-bottom: 0;
+  font-size: 20px;
+  text-align: center;
  }
+ .Music-performers{
+  display: flex;
+  align-items: center;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  width: 400px;
+  height: 200px;
+ }
+ .Music-performers img{
+  height: 300px;
+ }
+ .Benbeejammin{
+  grid-row: 5/6;
+  grid-column: 1/2;
+  margin-left:50px ;
+ }
+
  .onload  img{
   height: 250px;
   margin-left: -20px;
  }
-  
-  .ball-p{
-    font-family: var(--body);
-    width: 350px;
-    text-align: left;
-  }
-  .pls-img{
-    width:450px;
-    margin-right: 150px;
-  }
   .formbox{
     margin-right: 27px;
   }

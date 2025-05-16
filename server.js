@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/api/rsvp', async (req, res) => {
-  const { name, email, payment, note } = req.body;
+  const { name, email, note } = req.body;
   
   try {
     // Email to me
@@ -34,7 +34,6 @@ app.post('/api/rsvp', async (req, res) => {
         <h3>New RSVP Submission</h3>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Payment Method</strong> ${payment}</p>
         <p><strong>Note</strong> ${note}</p>
       `
     });
@@ -45,16 +44,11 @@ app.post('/api/rsvp', async (req, res) => {
       to: email,
       subject: 'Thank you for your RSVP',
       html: `
-        <h3>Thank you for your RSVP!</h3>
-        <p>HEY ${name},</p>
-        <p>We have received your RSVP and look forward to seeing you at our gallery.</p>
-        <p>Here are the details you provided:</p>
-        <p><strong>Payment Method:</strong> ${payment}</p>
-        ${payment === 'Venmo' ? `
-        <p>Please send your $15 payment to: <a href="https://venmo.com/u/Ben-Brechter" target="_blank">https://venmo.com/u/Ben-Brechter</a></p>
-        ` : ''}
-        <p>We also accept payment at the door!.</p>
-        <p>Tell a friend!!<p>
+        <p>Thank you for RSVPing ${name},</p>
+        <p>We can't wait to see you at the House party!</p>
+        <p>Address: 515 Coral st Houston, TX 77023 <p>
+        <p>You can pay the $15 entry fee at the door with cash, card, venmo, or cashapp</p>
+        <p>Please bring a friend or post about us!!!<p>
       `
     });
     

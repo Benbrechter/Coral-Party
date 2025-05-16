@@ -120,7 +120,7 @@ export default function Rsvp() {
                 </svg>
               </div>
               <h3 className="popup-title">Thank You!</h3>
-              <p className="popup-message">Peace and LOVE!! thank you for the RSVP, you will recive an email to the email you put down! please click the links to venmo or cashapp to send 15$</p>
+              <p className="popup-message">Peace and LOVE!! thank you for the RSVP, you will recive an email containing all of the information you need see you at the party!!</p>
               <button onClick={closePopup} className="popup-button">
                 Close
               </button>
