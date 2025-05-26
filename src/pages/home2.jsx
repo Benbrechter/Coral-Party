@@ -19,7 +19,7 @@ export default function Home2(){
                 <p>$15 entry fee will include</p>
                 <ul>
                     <li>Food</li>
-                    <li>Acholoic Dranks</li>
+                    <li>Alcoholic Dranks</li>
                     <li>Immense Vibes</li>
                 </ul>
                 <Link to='/rsvp'><img src={RSVP} alt="rsvp button" /></Link>
@@ -33,7 +33,7 @@ export default function Home2(){
              </div>
 
              <div className="Clothing-rack">
-                <p>$5 clothing rack with random gem's</p>
+                <p>Up to 6 local Vendors posted in the back yard!</p>
                 <img src={Clothing} alt="image of clothing rack" />
             </div>
 

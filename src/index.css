@@ -58,6 +58,12 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 /* ----------------------------------------------------- */
+.onload-img{
+  height: 800px;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
 .maine{
   width: 100%;
   display: flex;
@@ -143,30 +149,88 @@ button:focus-visible {
   font-family: var(--body);
 }
 .ball{
-  width: 1500px;
-  margin-top: 150px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  background-color: black;
+  /* grid-template-columns: 300px 300px 455px 300px 300px 300px;
+  grid-template-rows: 100px 300px 300px 300px 300px; */
 }
-.ball h1{
-  font-family: var(--header);
-  color: var(--blue);
-  font-size: 65px;
-  margin-left: 150px;
-  
+.ball-background{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  margin-top: 60px;
+  border-right: 1px solid yellow;
+  border-top: 1px solid yellow;
+  border-left: 1px solid yellow;
 }
-.ball-p{
+.ball-background img{
+  width: 80%;
+  height: 650px;
+}
+.ball-background h1{
+  margin-bottom: 5px;
+  color: white;
+} 
+.ball-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  padding-top: 50px;
+  border-right: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+  border-left: 1px solid yellow;
+  margin: 0;
+}
+.ball-info h1{
+  color: yellow;
+}
+.ball-info p{
   text-align: start;
-  color: Black;
-  width: 1000px;
-  font-size: 18px;
+  color: white;
+  font-size: 15px;
   font-family: var(--body);
+  width: 50%;
+}
+.ball-info ul{
+  list-style: none;
+  font-family: var(--body);
+}
+.ball-nav{
+  display: flex;
+}
+
+.ball-ul{
+list-style: none;
+display: flex;
+}
+.ball-ul li{
+  margin: 10px;
+  font-size: 20px;
+  color: yellow;
+  font-family: var(--body);
+}
+.always-home{
+  height: 200px;
+  position: absolute;
+  left: 50px;
+  top: 0px;
+}
+.break{
+  display: flex;
+}
+.break p{
+  width:400px;
 }
 .Home2{
  display: grid;
  grid-template-columns: repeat(6, 20%) ;
- grid-Template-rows: repeat(3, 600px) ;
+ grid-Template-rows: repeat(4, 400px) ;
  justify-items: start;
 }
 
@@ -205,6 +269,7 @@ button:focus-visible {
 
 .Rho-art{
   margin-left: 150px;
+  margin-top: 100px;
   height: 450px;
   width: 350px;
   grid-row: 2/3;
@@ -225,8 +290,9 @@ button:focus-visible {
 .Clothing-rack{
   height: 300px;
   width: 450px;
-  grid-row: 2/3;
-  grid-column: 5/6;
+  margin-top: 200px;
+  grid-row: 1/2;
+  grid-column: 6/7;
 }
 .Clothing-rack p{
   color: black;
@@ -243,7 +309,9 @@ button:focus-visible {
 .Benbeejammin{
   height: 500px;
   width: 350px;
-  grid-row: 3/4;
+  margin-left: 100px;
+  margin-top: 200px;
+  grid-row: 2/3;
   grid-column: 3/4;
 }
 .Benbeejammin p{
@@ -260,8 +328,9 @@ button:focus-visible {
 .Music-performers{
   width: 400px;
   height: 300px;
-  grid-row: 3/4;
+  grid-row: 2/3;
   grid-column: 6/7;
+  margin-top: 200px;
 }
 .Music-performers p{
   color: black;
@@ -502,6 +571,7 @@ button:focus-visible {
   grid-column: 1/2;
   width: 400px;
   height: 200px;
+  margin: 0px;
  }
  .Clothing-rack p{
   margin-bottom: 0;
@@ -515,21 +585,44 @@ button:focus-visible {
   grid-column: 1/2;
   width: 400px;
   height: 200px;
+  margin: 0;
  }
  .Music-performers img{
   height: 300px;
  }
  .Benbeejammin{
-  grid-row: 5/6;
+  grid-row: 4/5;
   grid-column: 1/2;
   margin-left:50px ;
  }
 
- .onload  img{
-  height: 250px;
-  margin-left: -20px;
+ .onload-img{
+  height: 350px;
+  top: 30%;
+  left: 20%;
  }
   .formbox{
     margin-right: 27px;
+  }
+  .ball h1{
+    font-size: 20px;
+  }
+  .always-home{
+    height: 100px;
+    left:25px;
+    top: 25px;
+  }
+  .ball-ul{
+    padding: 0;
+  }
+  .ball-ul li{
+    font-size: 12px;
+  }
+  .ball-background img{
+    height: 350px;
+  }
+  .break p{
+    width: 175px;
+    font-size: 12px;
   }
 }

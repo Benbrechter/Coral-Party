@@ -46,7 +46,8 @@ app.post('/api/rsvp', async (req, res) => {
       html: `
         <p>Thank you for RSVPing ${name},</p>
         <p>We can't wait to see you at the House party!</p>
-        <p>Address: 515 Coral st Houston, TX 77023 <p>
+        <p>Address: 515 Coral St Houston, TX 77023 United States<p>
+        <p>Map Coordinates if you're like that: 29.72222 N, 95.28869 W<p>
         <p>You can pay the $15 entry fee at the door with cash, card, venmo, or cashapp</p>
         <p>Please bring a friend or post about us!!!<p>
       `
